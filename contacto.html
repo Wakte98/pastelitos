@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contacto - El Recetario de Iñaki</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="menu">
+    <ul>
+        <li class="menu-list"><a href="index.html">Inicio</a></li>
+        <li class="menu-list"> <a href="recetas.html">Recetas</a></li>
+        <li class="menu-list"><a href="contacto.html">Mándame tu receta</a></li>
+    </ul>
+</div>    <h1>Mándame tu receta favorita</h1>
+    <p>Rellena este formulario y probaré a cocinar tu plato en casa.</p>
+
+    <form>
+        <p>Tu nombre:</p>
+        <input id="nombre-interesado" type="text" placeholder="Escribe tu nombre..." required>
+
+        <p>Tu correo electrónico:</p>
+        <input type="email" placeholder="ejemplo@correo.com" required>
+
+        <p>¿Qué día cocinaste esta receta por última vez?</p>
+        <input type="date">
+
+        <p>Elige el color principal de tu plato (ej. verde para ensalada):</p>
+        <input type="color">
+
+        <br><br>
+        <button type="submit">Enviar Receta a Iñaki</button>
+    </form>
+<hr>
+<div class="tarjeta-visita">
+<h2>¡Gracias por compartir tu receta!</h2>
+<p>Receta compartida por el chef: <strong id="resultado-nombre">...</strong></p>
+</div>
+
+<script>
+//1. Atrapar la caja de texto donde el usuario escribe su nombre
+const inputNombre = document.getElementById("nombre-interesado");
+//2. Atrapar el texto en negrita donde quiero mostrar el resultado
+const resultadoNombre = document.getElementById("resultado-nombre");
+//3. Escuchar el evento de escribir en la caja de texto
+inputNombre.addEventListener("input", function(){
+    resultadoNombre.textContent = inputNombre.value;
+});
+</script>
+
+</body>
+</html>

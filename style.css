@@ -1,0 +1,90 @@
+* { 
+    box-sizing: border-box;
+}
+
+
+/* 1. Selector de Etiqueta: Afecta a TODA la página */
+body {
+    background-color: #fff9e6; /* Un tono crema suave, perfecto para cocina */
+    font-family: 'Roboto', sans-serif; /* Tipografía limpia importada de Google Fonts */
+    color: #333333; /* Gris muy oscuro para el texto (mejor contraste que el negro puro) */
+}
+
+/* Selector de Etiqueta: Afecta a todos los enlaces de la web */
+a {
+    color: #e67e22; /* Color naranja zanahoria para los enlaces */
+}
+
+/* 2. Selector de Identificador (#): Afecta solo al elemento con id="titulo-principal" */
+#titulo-principal {
+    font-family: 'Pacifico', cursive; /* Tipografía de estilo "escrito a mano" */
+    color: #c0392b; /* Rojo oscuro oscuro */
+    text-align: center; /* Centrar el texto */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra suave para dar volumen */
+}
+
+/* 3. Selector de Clase (.): Afecta a cualquier elemento que tenga class="destacado" */
+.destacado {
+    background-color: #27ae60; /* Fondo verde esmeralda */
+    color: white; /* Texto en blanco para que se lea bien sobre el verde */
+    font-weight: bold; /* Pone el texto en negrita */
+}
+
+.tarjeta {
+    width: 300px;
+    background-color: white;
+    border: 2px dashed #e67e22;
+    padding: 20px;
+    margin:20px;
+    /*diseño*/
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgb(0, 0, 0, 0.2);
+    
+}
+
+.tarjeta img {border-radius: 8px;}
+
+.menu {
+    background-color: #fff9e6;
+    padding: 1rem;
+}
+
+.menu-list {
+    display: flex;
+    justify-content: center; 
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 20px; /* Espacio entre elementos */
+}
+
+/* Enlaces */
+.menu-list a {
+    text-decoration: none;
+    color: e67e22;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background 0.3s;
+}
+
+/* Efecto Hover */
+.menu-list a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+.footer {
+    background-color: #333333; /* Fondo oscuro para el pie de página */
+    color: white; /* Texto en blanco para buen contraste */
+    text-align: center; /* Centrar el texto */
+    padding: 20px 0; /* Espaciado vertical */
+    list-style: none;
+}
+.footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    gap: 15px; /* Espacio entre los enlaces de redes sociales */
+    padding: 0;
+    margin: 10px 0 0 0; /* Margen superior para separar del texto */
+}
